@@ -9,13 +9,14 @@ patch:
     good_old_caps_lock: true
     switch_key: {Caps_Lock: commit_code, Control_L: noop, Control_R: noop, Eisu_toggle: clear, Shift_L: commit_code, Shift_R: noop}
   "key_binder/bindings":
-    - {accept: Tab, send: Down, when: always}
+    - {accept: Tab, send: Page_Down, when: has_menu}
     - {accept: "Shift+Tab", send: Page_Up, when: composing}
     - {accept: minus, send: Page_Up, when: paging}
     - {accept: equal, send: Page_Down, when: has_menu}
-    - {accept: bracketleft, send: Up, when: always}
-    - {accept: bracketright, send: Down, when: always}
+    - {accept: bracketleft, send: Page_Up, when: paging}
+    - {accept: bracketright, send: Page_Down, when: has_menu}
     - {accept: Delete, send: Delete, when: composing}
+    - {accept: "Shift+space", toggle: full_shape, when: always}
   schema_list:
     - {schema: quick5}
     - {schema: luna_pinyin}
