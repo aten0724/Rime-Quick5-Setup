@@ -14,17 +14,20 @@ schema:
     - jyut6ping3
     - luna_pinyin
 menu:
-  page_size: 9
+  page_size: 5
 
 switches:
   - name: ascii_mode
     reset: 0
-    states: [ 中文, 西文 ]
+    states: [ 中文, Eng ]
   - name: full_shape
+    reset: 0
     states: [ 半角, 全角 ]
   - name: simplification
+    reset: 0
     states: [ 漢字, 汉字 ]
   - name: ascii_punct
+    reset: 0
     states: ["。，", "．，"]
   - name: emoji_suggestion
     reset: 1
@@ -160,7 +163,6 @@ recognizer:
     cantonese: "`c[a-z]*;?$"
     pinyin_input: "`P[a-z]*;?$"
     cantonese_input: "`C[a-z]*;?$"
-    punct: '^/([0-9]0?|[A-Za-z]*)$'
     lua: "``[a-z0-9+.*/:-]*'?$"
 
 
