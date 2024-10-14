@@ -25,6 +25,9 @@ use_preset_vocabulary: true
 #雙拼不支持 quick5.cn_en 詞庫，請用戶手動禁用。
 import_tables:
   - quick5
+  - jyut6ping3.words
+  - jyut6ping3.phrase
+  - jyut6ping3.maps
   - moe
   - sgo
   - lun
