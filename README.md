@@ -6,19 +6,19 @@ RIME 速成輸入法 整合 for Windows小狼毫
 RIME配置文件
 
 # 個人快速筆記
-按 F4 鍵或組合鍵 Ctrl+` 喚出輸入方案選單。
+1. 按 F4 鍵或組合鍵 Ctrl+` 喚出輸入方案選單。
 
-輸入編碼後，如果希望輸入碼對應的鍵盤字元直接上屏，可使用回車鍵（Return）。
+2. 輸入編碼後，如果希望輸入碼對應的鍵盤字元直接上屏，可使用回車鍵（Return）。
 
-使用 ←→鍵 定位光標插入點「‸」（或顯示為「›」），編輯輸入碼。 也可用來縮短後選詞所對應輸入碼的範圍、確認詞句的一部分。
+3. 使用 ←→鍵 定位光標插入點「‸」（或顯示為「›」），編輯輸入碼。 也可用來縮短後選詞所對應輸入碼的範圍、確認詞句的一部分。
 
-Home、End 鍵 快速跳至句首、句末。
+4. Home、End 鍵 快速跳至句首、句末。
 
-BackSpace、Delete 鍵 分別刪除光標前、後的編碼字元。注意在蘋果鍵盤上前者標註為 Delete，後者通常是組合鍵 Fn+Delete。
+5. BackSpace、Delete 鍵 分別刪除光標前、後的編碼字元。注意在蘋果鍵盤上前者標註為 Delete，後者通常是組合鍵 Fn+Delete。
 
-Escape 鍵 清空未完成的輸入。
+6. Escape 鍵 清空未完成的輸入。
 
-在想要刪除的用戶詞組上，按下 Shift+Delete 或 Control+Delete（蘋果鍵盤用 Shift+Fn+Delete）。
+7. 在想要刪除的用戶詞組上，按下 Shift+Delete 或 Control+Delete（蘋果鍵盤用 Shift+Fn+Delete）。
 
 # RIME 教程及下載
 https://rime.im/
