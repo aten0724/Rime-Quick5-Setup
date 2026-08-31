@@ -5,6 +5,44 @@ customization:
   modified_time: "Sun Aug 30 20:30:20 2026"
   rime_version: 1.13.1
 patch:
-  "style/color_scheme": google
-  "style/horizontal": false
-  "style/vertical_text": false
+  style:
+    color_scheme: wechat                 # 使用下方定義的微信配色方案
+    font_face: "Microsoft YaHei"                # 候選文字字型
+    font_point: 14                       # 候選文字大小
+    horizontal: false                    # 候選排列：true 橫向；false 直向
+    vertical_text: false                 # 文字方向：false 橫排文字；true 豎排文字
+    inline_preedit: true                 # 在應用程式輸入位置顯示預編輯文字
+    label_font_point: 12                 # 候選序號字型大小
+    layout:
+      border: 2                          # 候選框邊框厚度
+      round_corner: 6                    # 高亮候選色塊圓角半徑
+      spacing: 0                         # 預編輯區與候選區之間的距離
+      align_type: center                 # 序號、候選文字及註解的垂直對齊方式
+      min_width: 10                      # 候選框最小寬度
+      margin_x: 12                       # 候選內容左右邊距
+      margin_y: 8                        # 候選內容上下邊距
+      candidate_spacing: 11             # 候選項之間的距離
+      hilite_spacing: 2                 # 候選序號與文字之間的距離
+      hilite_padding: 3                 # 高亮色塊上下內邊距及預設內邊距
+      hilite_padding_x: 7               # 高亮色塊左右內邊距
+      corner_radius: 7                  # 整個候選框圓角半徑
+      shadow_radius: 7                  # 候選框陰影半徑；0 表示關閉陰影
+  preset_color_schemes:
+    wechat:
+      name: "微信鍵盤／WeChat Keyboard" # 配色方案顯示名稱
+      author: wechat                     # 配色方案作者
+      back_color: 0xFFFFFF               # 候選框背景顏色
+      border_height: 0                   # 配色方案的上下邊框高度
+      border_width: 8                    # 配色方案的左右邊框寬度
+      candidate_format: "%c\u2005%@\u2005" # 候選序號、間距與候選文字格式
+      comment_text_color: 0x999999       # 候選註解文字顏色
+      corner_radius: 5                   # 配色方案候選框圓角半徑
+      hilited_corner_radius: 5           # 選中候選色塊圓角半徑
+      hilited_candidate_back_color: 0x75B100 # 選中候選背景顏色
+      hilited_candidate_text_color: 0xFFFFFF # 選中候選文字顏色
+      hilited_label_color: 0xFFFFFF      # 選中候選序號顏色
+      label_color: 0x888888              # 未選中候選序號顏色
+      label_font_point: 12               # 配色方案候選序號字型大小
+      text_color: 0x424242               # 預編輯文字顏色
+      border_color: 0x00FFFFFF           # 邊框顏色；目前為透明白色
+      shadow_color: 0x20000000           # 陰影顏色；目前為半透明黑色
