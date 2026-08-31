@@ -13,6 +13,7 @@ patch:
     vertical_text: false                 # 文字方向：false 橫排文字；true 豎排文字
     inline_preedit: true                 # 在應用程式輸入位置顯示預編輯文字
     label_font_point: 12                 # 候選序號字型大小
+    label_format: "%s"                   # 候選字格式
     layout:
       border: 2                          # 候選框邊框厚度
       round_corner: 6                    # 高亮候選色塊圓角半徑
@@ -22,7 +23,7 @@ patch:
       margin_x: 12                       # 候選內容左右邊距
       margin_y: 8                        # 候選內容上下邊距
       candidate_spacing: 11             # 候選項之間的距離
-      hilite_spacing: 2                 # 候選序號與文字之間的距離
+      hilite_spacing: 5                 # 候選序號與文字之間的距離
       hilite_padding: 3                 # 高亮色塊上下內邊距及預設內邊距
       hilite_padding_x: 7               # 高亮色塊左右內邊距
       corner_radius: 7                  # 整個候選框圓角半徑
@@ -42,7 +43,6 @@ patch:
       hilited_candidate_text_color: 0xFFFFFF # 選中候選文字顏色
       hilited_label_color: 0xFFFFFF      # 選中候選序號顏色
       label_color: 0x888888              # 未選中候選序號顏色
-      label_font_point: 12               # 配色方案候選序號字型大小
       text_color: 0x424242               # 預編輯文字顏色
       border_color: 0x00FFFFFF           # 邊框顏色；目前為透明白色
       shadow_color: 0x20000000           # 陰影顏色；目前為半透明黑色
