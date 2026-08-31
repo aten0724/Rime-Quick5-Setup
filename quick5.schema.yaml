@@ -24,16 +24,16 @@ schema:
 # abbrev: 默認的縮寫取 states 的第一個字符，abbrev 可自定義一個字符
 switches:
   - name: ascii_mode
-    states: [ 中文, 英文 ]
+    states: [ 中文, Eng ]
     reset: 1  # 預設是英文模式
-  - name: ascii_punct  # 中英標點
-    states: [ 。，, ．， ]
-  - name: simplification
-    states: [ 繁, 簡 ]
-  - name: emoji
-    states: [ 💀, 😄 ]
   - name: full_shape
     states: [ 半角, 全角 ]
+  - name: simplification
+    states: [ 繁, 簡 ]
+  - name: ascii_punct  # 中英標點
+    states: [ 。，, ．， ]
+  - name: emoji
+    states: [ 😔, 😀 ]
 
 
 # 輸入引擎
@@ -183,7 +183,7 @@ pinyin:
   tips: 【反查國語讀音】
   initial_quality: 1	# 調整該編譯器出字優先度
   tag: pinyin
-  
+
 cantonese_reverse_lookup:
   tags: [ cantonese ]
   dictionary: jyut6ping3
@@ -193,7 +193,7 @@ pinyin_reverse_lookup:
   tags: [ pinyin ]
   dictionary: luna_pinyin
   overwrite_comment: true  # 覆蓋其他提示
-  
+
 #臨時以拼音輸入中文
 pinyin_input:
   tag: pinyin_input
