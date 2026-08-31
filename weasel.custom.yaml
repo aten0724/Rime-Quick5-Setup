@@ -6,7 +6,7 @@ customization:
   rime_version: 1.13.1
 patch:
   style:
-    color_scheme: wechat                 # 使用下方定義的微信配色方案
+    color_scheme: ms_blue                # 使用下方定義的 MS Blue 配色方案
     font_face: "Microsoft YaHei"                # 候選文字字型
     font_point: 14                       # 候選文字大小
     horizontal: false                    # 候選排列：true 橫向；false 直向
@@ -46,3 +46,26 @@ patch:
       text_color: 0x424242               # 預編輯文字顏色
       border_color: 0x00FFFFFF           # 邊框顏色；目前為透明白色
       shadow_color: 0x20000000           # 陰影顏色；目前為半透明黑色
+    ms_blue:
+      name: "MS 藍色／MS Blue"          # 配色方案顯示名稱
+      author: 小碼哥                     # 配色方案作者
+      back_color: 0xFFFFFF               # 候選框背景顏色
+      border_height: 0                   # 配色方案的上下邊框高度
+      border_width: 8                    # 配色方案的左右邊框寬度
+      candidate_format: "%c\u2005%@\u2005" # 候選序號、間距與候選文字格式
+      comment_text_color: 0x999999       # 候選註解文字顏色
+      corner_radius: 5                   # 配色方案候選框圓角半徑
+      hilited_corner_radius: 5           # 選中候選色塊圓角半徑
+      hilited_candidate_back_color: 0xD75A00 # 選中候選背景顏色
+      hilited_candidate_text_color: 0xFFFFFF # 選中候選文字顏色
+      hilited_label_color: 0xFFFFFF      # 選中候選序號顏色
+      hilited_candidate_label_color: 0xFFFFFF # 選中候選標籤顏色
+      label_color: 0x999999              # 未選中候選序號顏色
+      candidate_text_color: 0x3c3c3c     # 未選中候選文字顏色
+      hilited_comment_text_color: 0xFFFFFF # 選中候選註解顏色
+      text_color: 0x424242               # 預編輯文字顏色
+      hilited_text_color: 0xFFFFFF       # 選中預編輯文字顏色
+      candidate_back_color: 0xFFFFFF     # 未選中候選背景顏色
+      hilited_back_color: 0xD75A00       # 選中預編輯背景顏色
+      border_color: 0xeaeaea              # 候選框邊框顏色
+      shadow_color: 0x20000000           # 候選框陰影顏色
