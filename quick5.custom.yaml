@@ -1,6 +1,7 @@
 patch:
   __include: grammar:/hant-cantonese
   "switches/@0/reset": 0
+  "punctuator/digit_separators": ",.:"
   "punctuator/half_shape":
     ' ' : { commit: ' ' }
     ',' : { commit: ',' }
@@ -11,7 +12,7 @@ patch:
     '?' : { commit: '?' }
     ';' : { commit: ';' }
     ':' : { commit: ':' }
-    '''' : [，, 。, 、, ：, ；, ！, ？, ～, ・, ＊, （, ）, 「, 」, 『, 』]
+    '''' : [，, 。, 、, ：, ；, ！, ？, ～, ・, ＊, （, ）, 「, 」, 『, 』, 【, 】]
     '"' : '"'
     '\' : '\'
     '|' : '|'
