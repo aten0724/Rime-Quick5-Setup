@@ -6,6 +6,9 @@
 -- 以词定字，可在 default.yaml → key_binder 下配置快捷键，默认为左右中括号 [ ]
 select_character = require("select_character")
 
+-- 取消組字時吞掉完整的 Esc 按鍵週期，避免按鍵傳到目前的應用程式。
+escape_cancel_processor = require("escape_cancel_processor")
+
 -- translators:
 
 -- 日期时间，可在方案中配置触发关键字。
