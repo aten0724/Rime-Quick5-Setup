@@ -11,6 +11,10 @@ local function processor(key, env)
 
     if swallowing_escape then
         if key:release() then
+            local context = env.engine.context
+            if not context:clear_previous_segment() then
+                context:clear()
+            end
             swallowing_escape = false
         end
         return 1  -- kAccepted
@@ -19,8 +23,7 @@ local function processor(key, env)
     local context = env.engine.context
     if not key:release() and (context:is_composing() or context:has_menu()) then
         swallowing_escape = true
-        -- 讓 express_editor 處理第一次按下，以保留已確認的組字片段。
-        return 2  -- kNoop
+        return 1  -- kAccepted
     end
 
     return 2  -- kNoop
